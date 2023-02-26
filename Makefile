@@ -52,3 +52,5 @@ tests_run:
 	make -C lib/my
 	gcc -o unit_tests $(TEST) $(CPPFLAGS) -Llib/ -lmy -lcriterion --coverage
 	./unit_tests
+
+.PHONY: all re tests_run debug fclean clean
